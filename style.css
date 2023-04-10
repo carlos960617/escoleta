@@ -103,7 +103,8 @@ ul>* {
 li {
     height: 100%;
     line-height: 4vw;
-    border-radius: 0.5rem;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
     font-size: 1.2vw;
 }
 
@@ -113,12 +114,11 @@ li {
 }
 
 #li1{
-    border-top-left-radius: 0rem;
     border-bottom-left-radius: 0rem;
 
 }
 #li5{
-    border-top-right-radius: 0rem;
+   
     border-bottom-right-radius: 0rem;
 
 }
