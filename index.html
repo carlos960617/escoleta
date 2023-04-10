@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/784a50890b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>L'Escoleta de Cary</h1>
+            <h2>Educación infantil de cero a tres años</h2>
+        </div>
+    </header>
+    <div id="arco" class="arcoiris "></div>
+    <nav>
+        <ul>
+            <li id="li1" class="listo li1"><a href="#">Actividades</a></li>
+            <li id="li2" class="listo li2"><a href="#">Instalaciones</a></li>
+            <li id="li3" class="listo li3"><a href="#">Area Padres</a></li>
+            <li id="li4" class="listo li4"><a href="#">Blog educativo</a></li>
+            <li id="li5" class="listo li5"><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="section">
+            <div class="primario">
+                <div class="primario_menu">
+                    <div class="cartel cartel1">
+
+                        <p class="myParagraph p1">DESCUBRE</p>
+                        <div class="actividades">
+                            <p id="p2" class="myParagraph p2">NUESTRAS</p>
+                            <p id="p3" class="myParagraph p3">ACTIVIDADES</p>
+                        </div>
+
+                    </div>
+                    <div class="submenu">
+                        <div class="pieza pieza1"><img src="src/agua_m.png" alt="pieza"><img class="dos"
+                                src="src/agua.png" alt="pieza"></div>
+                        <div class="pieza pieza2"><img src="src/arte_m.png" alt="pieza"><img class="dos"
+                                src="src/arte.png" alt="pieza"></div>
+                        <div class="pieza pieza3"><img src="src/asamblea_m.png" alt="pieza"><img class="dos"
+                                src="src/parque.png" alt="pieza"></div>
+                        <div class="pieza pieza4"><img src="src/cocina_m.png" alt="pieza"><img class="dos"
+                                src="src/cocina.png" alt="pieza"></div>
+                        <div class="pieza pieza5"><img src="src/psico_m.png" alt="pieza"><img class="dos"
+                                src="src/psicomotricidad.png" alt="pieza"></div>
+                        <div class="pieza pieza6"><img src="src/parque_m.png" alt="pieza"><img class="dos"
+                                src="src/ingles.png" alt="pieza"></div>
+                        <div class="pieza pieza7"><img src="src/teatro_m.png" alt="pieza"><img class="dos"
+                                src="src/teatro.png" alt="pieza"></div>
+                    </div>
+
+                </div>
+                <div class="primario_boton">
+                    <button class="boton">
+                        <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+                <div class="primario_imagen">
+                    <img id="long_1" src="src/long_1_0.png">
+
+                </div>
+            </div>
+            <div class="secundario">
+                <div class="secu_container">
+                    <div class="secundario_menu">
+                        <div class="cartel cartel2">
+                            <p class="myParagraph p1">CONOCE A</p>
+                            <p id="p4" class="myParagraph p2 ">NUESTRO</p>
+                            <p id="p5" class="myParagraph p3 ">EQUIPO</p>
+                    
+                        </div>
+                        <div class="submenu submenu2">
+                            <div class="pieza pieza8"><img src="src/1_1_m.png" alt="pieza"><img class="dos"
+                                    src="src/1_1.png" alt="pieza"></div>
+                            <div class="pieza pieza9"><img src="src/1_2_m.png" alt="pieza"><img class="dos"
+                                    src="src/1_2.png" alt="pieza"></div>
+                            <div class="pieza pieza10"><img src="src/2_1_m.png" alt="pieza"><img class="dos"
+                                    src="src/2_1.png" alt="pieza"></div>
+                            <div class="pieza pieza11"><img src="src/2_2_m.png" alt="pieza"><img class="dos"
+                                    src="src/2_2.png" alt="pieza"></div>
+                            <div class="pieza pieza12"><img src="src/2_3_m.png" alt="pieza"><img class="dos"
+                                    src="src/2_3.png" alt="pieza"></div>
+                            <div class="pieza pieza13"><img src="src/3_1_m.png" alt="pieza"><img class="dos"
+                                    src="src/3_1.png" alt="pieza"></div>
+                        </div>
+                </div>
+                </div>
+                <div class="secundario_boton">
+                    <button class="boton">
+                        <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+                    </button>
+
+                </div>
+                <div class="secundario_imagen">
+                    <img id="long_2" src="src/long_2_4.png">
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+
+        const myParagraphs = document.querySelectorAll('.myParagraph');
+        var hoverElements = document.querySelectorAll('.pieza');
+        const targetElement1 = document.getElementById('p2');
+        const targetElement2 = document.getElementById('p3');
+        const targetElement3 = document.getElementById('p4');
+        const targetElement4 = document.getElementById('p5');
+        const long_1 = document.getElementById('long_1');
+        const long_2 = document.getElementById('long_2');
+        var listos = document.querySelectorAll('.listo');
+        const box1 = document.querySelector('.arcoiris');
+
+        hoverElements.forEach(function (element) {
+            element.addEventListener('mouseover', function () {
+                var textContent1 = "NUESTRAS";
+                var textContent2 = "ACTIVIDADES";
+                var textContent3 = "NUESTRO";
+                var textContent4 = "EQUIPO";
+                if (element.classList.contains("pieza1")) {
+                    textContent1 = "FIESTAS";
+                    textContent2 = "DEL AGUA";
+
+                    transicionLong("long_1_1.jpg");
+
+                } else if (element.classList.contains("pieza2")) {
+                    textContent1 = "CLASES";
+                    textContent2 = "DE ARTE";
+                    transicionLong("long_1_2.png");
+                } else if (element.classList.contains("pieza3")) {
+                    textContent1 = "EXCURSIONES";
+                    textContent2 = "AL PARQUE";
+                    transicionLong("long_1_3.png");
+                } else if (element.classList.contains("pieza4")) {
+                    textContent1 = "COCINAR";
+                    textContent2 = "JUNTOS";
+                    transicionLong("long_1_4.png");
+                } else if (element.classList.contains("pieza5")) {
+                    textContent1 = "COMO";
+                    textContent2 = "ENSEÑAMOS";
+                    transicionLong("long_1_5.png");
+                } else if (element.classList.contains("pieza6")) {
+                    textContent1 = "EVERYDAY";
+                    textContent2 = "ENGLISH";
+                    transicionLong("long_1_6.png");
+                } else if (element.classList.contains("pieza7")) {
+                    textContent1 = "LAS FIESTAS";
+                    textContent2 = "Y TEATROS";
+                    transicionLong("long_1_7.png");
+                }else if (element.classList.contains("pieza8")) {
+                    textContent3 = "DIRECTORA";
+                    textContent4 = "CARIDAD";
+                    transicionLong2("long_2_6.png");
+                }else if (element.classList.contains("pieza9")) {
+                    textContent3 = "COCINERA";
+                    textContent4 = "MASAYO";
+                    transicionLong2("long_2_2.png");
+                }else if (element.classList.contains("pieza10")) {
+                    textContent3 = "CLASE 1";
+                    textContent4 = "MERCHE";
+                    transicionLong2("long_2_3.png");
+                }else if (element.classList.contains("pieza11")) {
+                    textContent3 = "PSICOLOGA";
+                    textContent4 = "ANA PASTOR";
+                    transicionLong2("long_2_1.png");
+                }else if (element.classList.contains("pieza12")) {
+                    textContent3 = "CLASE 2";
+                    textContent4 = "ZAIDA";
+                    transicionLong2("long_2_4.png");
+                }else if (element.classList.contains("pieza13")) {
+                    textContent3 = "APOYO";
+                    textContent4 = "MAFALDA";
+                    transicionLong2("long_2_5.png");
+                }
+
+
+                targetElement1.innerHTML = spanizer(textContent1);
+                targetElement2.innerHTML = spanizer(textContent2);
+                targetElement3.innerHTML = spanizer(textContent3);
+                targetElement4.innerHTML = spanizer(textContent4);
+            });
+
+            element.addEventListener('mouseout', () => {
+
+                const textContent1 = "NUESTRAS";
+                const textContent2 = "ACTIVIDADES";
+                const textContent3 = "NUESTRO";
+                const textContent4 = "EQUIPO";
+                
+                targetElement1.innerHTML = spanizer(textContent1);
+                targetElement2.innerHTML = spanizer(textContent2);
+                targetElement3.innerHTML = spanizer(textContent3);
+                targetElement4.innerHTML = spanizer(textContent4);
+            });
+
+
+        });
+
+        function transicionLong(ruta) {
+            long_1.style.opacity = 0;
+
+            setTimeout(function () {
+
+                long_1.src = "src/"+ruta;
+
+
+                long_1.style.opacity = 1;
+            }, 300);
+        }
+        function transicionLong2(ruta) {
+            long_2.style.opacity = 0;
+
+            setTimeout(function () {
+
+                long_2.src = "src/"+ruta;
+
+
+                long_2.style.opacity = 1;
+            }, 300);
+        }
+
+
+        myParagraphs.forEach(paragraph => {
+
+            const textContent = paragraph.textContent;
+
+            paragraph.innerHTML = spanizer(textContent);
+        });
+
+        function spanizer(cadena) {
+
+            const newContent = cadena
+                .split('')
+                .map(char => `<span>${char}</span>`)
+                .join('');
+
+            return newContent;
+
+        }
+
+
+        listos.forEach(function (listo) {
+            listo.addEventListener('mouseover', function () {
+                var red = 0; var yellow = 0; var green = 0; var blue = 0; var purple = 0;
+                var red_i = 13; var yellow_i = 32; green_i = 52; blue_i = 69; purple_i = 84;
+                var starter = 0;
+                var stopper = 0;
+
+
+                function updateCSSProperty() {
+
+                    if (listo.classList.contains("li1")) {
+                        red_i += 1;
+                        yellow_i += 1;
+                        green_i += 1;
+                        blue_i += 1;
+                        purple_i += 1;
+                        newRed = red_i + "%";
+                        newYellow = yellow_i + "%";
+                        newGreen = green_i + "%";
+                        newBlue = blue_i + "%";
+                        newPurple = purple_i + "%";
+                        box1.style.setProperty("--iris-r", newRed);
+                        box1.style.setProperty("--iris-y", newYellow);
+                        box1.style.setProperty("--iris-g", newGreen);
+                        box1.style.setProperty("--iris-b", newBlue);
+                        box1.style.setProperty("--iris-p", newPurple);
+                        starter += 1;
+
+                        if (starter >= 10) {
+                            clearInterval(animation);
+                        }
+                    } else if (listo.classList.contains("li2")) {
+                        red_i -= 3;
+                        /* yellow_i += 1; */
+                        green_i += 3;
+                        blue_i += 2;
+                        purple_i += 1;
+                        newRed = red_i + "%";
+                        newYellow = yellow_i + "%";
+                        newGreen = green_i + "%";
+                        newBlue = blue_i + "%";
+                        newPurple = purple_i + "%";
+                        box1.style.setProperty("--iris-r", newRed);
+                        box1.style.setProperty("--iris-y", newYellow);
+                        box1.style.setProperty("--iris-g", newGreen);
+                        box1.style.setProperty("--iris-b", newBlue);
+                        box1.style.setProperty("--iris-p", newPurple);
+                        starter += 1;
+
+                        if (starter >= 10) {
+                            clearInterval(animation);
+                        }
+
+                    } else if (listo.classList.contains("li3")) {
+                        red_i -= 2;
+                        yellow_i -= 3;
+                        green_i += 1;
+                        blue_i += 3;
+                        purple_i += 2;
+                        newRed = red_i + "%";
+                        newYellow = yellow_i + "%";
+                        newGreen = green_i + "%";
+                        newBlue = blue_i + "%";
+                        newPurple = purple_i + "%";
+                        box1.style.setProperty("--iris-r", newRed);
+                        box1.style.setProperty("--iris-y", newYellow);
+                        box1.style.setProperty("--iris-g", newGreen);
+                        box1.style.setProperty("--iris-b", newBlue);
+                        box1.style.setProperty("--iris-p", newPurple);
+                        starter += 1;
+
+                        if (starter >= 10) {
+                            clearInterval(animation);
+                        }
+                    } else if (listo.classList.contains("li4")) {
+                        red_i -= 1;
+                        yellow_i -= 2;
+                        green_i -= 3;
+                        blue_i += 1;
+                        purple_i += 4;
+                        newRed = red_i + "%";
+                        newYellow = yellow_i + "%";
+                        newGreen = green_i + "%";
+                        newBlue = blue_i + "%";
+                        newPurple = purple_i + "%";
+                        box1.style.setProperty("--iris-r", newRed);
+                        box1.style.setProperty("--iris-y", newYellow);
+                        box1.style.setProperty("--iris-g", newGreen);
+                        box1.style.setProperty("--iris-b", newBlue);
+                        box1.style.setProperty("--iris-p", newPurple);
+                        starter += 1;
+
+                        if (starter >= 10) {
+                            clearInterval(animation);
+                        }
+                    } else if (listo.classList.contains("li5")) {
+                        red_i -= 1;
+                        yellow_i -= 1;
+                        green_i -= 2;
+                        blue_i -= 3;
+                        /* purple_i += 1; */
+                        newRed = red_i + "%";
+                        newYellow = yellow_i + "%";
+                        newGreen = green_i + "%";
+                        newBlue = blue_i + "%";
+                        newPurple = purple_i + "%";
+                        box1.style.setProperty("--iris-r", newRed);
+                        box1.style.setProperty("--iris-y", newYellow);
+                        box1.style.setProperty("--iris-g", newGreen);
+                        box1.style.setProperty("--iris-b", newBlue);
+                        box1.style.setProperty("--iris-p", newPurple);
+                        starter += 1;
+
+                        if (starter >= 10) {
+                            clearInterval(animation);
+                        }
+                    }
+
+                }
+
+                // Start the animation with setInterval
+                var animation = setInterval(updateCSSProperty, 10);
+
+
+            });
+        });
+
+        /*  box2.addEventListener('mouseout', () => {
+ 
+             
+             var initialValue = 19;
+             var targetValue = 13;
+ 
+           
+             var duration = 200;
+ 
+            
+             function updateCSSProperty() {
+                 initialValue -= 1;
+                 newValue = initialValue + "%";
+                 box1.style.setProperty("--iris-amount", newValue);
+ 
+ 
+                 
+                 if (initialValue <= targetValue) {
+                     clearInterval(animation);
+                 }
+             }
+ 
+            
+             var animation = setInterval(updateCSSProperty, 10);
+         });
+         box3.addEventListener('mouseover', () => {
+ 
+             
+             var initialValue = 33;
+             var targetValue = 41;
+ 
+             
+             var duration = 200; 
+ 
+ 
+            
+             function updateCSSProperty() {
+                 initialValue += 1;
+                 newValue = initialValue + "%";
+                 box1.style.setProperty("--iris-y-2", newValue);
+ 
+ 
+                 
+                 if (initialValue >= targetValue) {
+                     clearInterval(animation);
+                 }
+             }
+ 
+            
+             var animation = setInterval(updateCSSProperty, 10);
+ 
+ 
+ 
+         });
+ 
+         box3.addEventListener('mouseout', () => {
+ 
+             
+             var initialValue = 41;
+             var targetValue = 33;
+ 
+            
+             var duration = 200;
+ 
+             function updateCSSProperty() {
+                 initialValue -= 1;
+                 newValue = initialValue + "%";
+                 box1.style.setProperty("--iris-y-2", newValue);
+ 
+ 
+                
+                 if (initialValue <= targetValue) {
+                     clearInterval(animation);
+                 }
+             }
+ 
+           
+             var animation = setInterval(updateCSSProperty, 10);
+         });
+  */
+
+    </script>
+
+</body>
+
+</html>
