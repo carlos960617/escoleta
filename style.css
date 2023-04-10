@@ -12,6 +12,13 @@
     --iris-p:84%;
 }
 
+h1{
+    font-size: 5vw;
+}
+h2{
+    font-size: 2vw;
+}
+
 .arcoiris{
     margin:0 auto;
     content: "";
@@ -60,7 +67,7 @@ nav {
 }
 
 ul {
-    height: 50px;
+    /* height: 5vw; */
     margin: 0 auto;
     text-align: center;
     list-style: none;
@@ -95,7 +102,7 @@ ul>* {
 
 li {
     height: 100%;
-    line-height: 50px;
+    line-height: 4vw;
     border-radius: 0.5rem;
     font-size: 1.2vw;
 }
@@ -422,16 +429,16 @@ a{
       transform: rotate(0deg) translate(0, 0);
     }
     10% {
-      transform: rotate(-10deg) translate(-10px, 0);
+      transform: rotate(-10deg) translate(-1vw, 0);
     }
     20% {
-      transform: rotate(10deg) translate(10px, 0);
+      transform: rotate(10deg) translate(1vw, 0);
     }
     30% {
-      transform: rotate(-10deg) translate(-10px, 0);
+      transform: rotate(-10deg) translate(-1vw, 0);
     }
     40% {
-      transform: rotate(10deg) translate(10px, 0);
+      transform: rotate(10deg) translate(1vw, 0);
     }
     50% {
       transform: rotate(0deg) translate(0, 0);
